@@ -38,8 +38,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"ChangeCard" sender:self];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        [self performSegueWithIdentifier:@"ChangeCard" sender:self];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    } else {
+        [self performSegueWithIdentifier:@"SwiftChangeCard" sender:self];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+
 }
 
 @end

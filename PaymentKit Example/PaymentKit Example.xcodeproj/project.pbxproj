@@ -16,6 +16,9 @@
 		16F373391875698F00290ABF /* diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F373381875698F00290ABF /* diners@2x.png */; };
 		16F3733B18756A5F00290ABF /* jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3733A18756A5F00290ABF /* jcb@2x.png */; };
 		4C332B4E16FA923E009C782D /* PKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C332B4D16FA923E009C782D /* PKTextField.m */; };
+		BBD80856239AE53400D15258 /* SPKCardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD80855239AE53400D15258 /* SPKCardNumber.swift */; };
+		BBD80859239AE59D00D15258 /* SPKCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD80858239AE59D00D15258 /* SPKCardType.swift */; };
+		BBD8085B239AF74800D15258 /* SwiftPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8085A239AF74800D15258 /* SwiftPaymentViewController.swift */; };
 		FA007D1F16FA3B82006DD86E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6F1A5916C19BF700835C75 /* QuartzCore.framework */; };
 		FA06D14C16AFC0AA00C46291 /* PKView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06D14B16AFC0AA00C46291 /* PKView.m */; };
 		FA2A74A016BB1EDD00AF0078 /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A749F16BB1EDD00AF0078 /* PKCard.m */; };
@@ -76,6 +79,10 @@
 		16F3733A18756A5F00290ABF /* jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jcb@2x.png"; sourceTree = "<group>"; };
 		4C332B4C16FA923E009C782D /* PKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTextField.h; sourceTree = "<group>"; };
 		4C332B4D16FA923E009C782D /* PKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTextField.m; sourceTree = "<group>"; };
+		BBD80854239AE53300D15258 /* bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-Header.h"; sourceTree = "<group>"; };
+		BBD80855239AE53400D15258 /* SPKCardNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPKCardNumber.swift; sourceTree = "<group>"; };
+		BBD80858239AE59D00D15258 /* SPKCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPKCardType.swift; sourceTree = "<group>"; };
+		BBD8085A239AF74800D15258 /* SwiftPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPaymentViewController.swift; sourceTree = "<group>"; };
 		FA06D14A16AFC0AA00C46291 /* PKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PKView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		FA06D14B16AFC0AA00C46291 /* PKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PKView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		FA2A749E16BB1EDD00AF0078 /* PKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PKCard.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -165,6 +172,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBD80857239AE58300D15258 /* SwiftPort */ = {
+			isa = PBXGroup;
+			children = (
+				BBD80855239AE53400D15258 /* SPKCardNumber.swift */,
+				BBD80854239AE53300D15258 /* bridging-Header.h */,
+				BBD80858239AE59D00D15258 /* SPKCardType.swift */,
+			);
+			path = SwiftPort;
+			sourceTree = "<group>";
+		};
 		FA45AC6116AE350D0003A41D = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +220,7 @@
 				FA45AC7F16AE350D0003A41D /* AppDelegate.h */,
 				FA45AC8016AE350D0003A41D /* AppDelegate.m */,
 				161409A21871300900387BB8 /* Storyboard.storyboard */,
+				BBD8085A239AF74800D15258 /* SwiftPaymentViewController.swift */,
 				FA45AC8816AE350E0003A41D /* PaymentViewController.h */,
 				FA45AC8916AE350E0003A41D /* PaymentViewController.m */,
 				FA45AC7716AE350D0003A41D /* Supporting Files */,
@@ -230,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA360F416C9F21C00049C6F /* Resources */,
+				BBD80857239AE58300D15258 /* SwiftPort */,
 				FA45ACA216AF1EE80003A41D /* PKCardNumber.h */,
 				FA45ACA316AF1EE80003A41D /* PKCardNumber.m */,
 				FA45ACA516AF33750003A41D /* PKCardCVC.h */,
@@ -362,12 +381,19 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Stripe;
+				TargetAttributes = {
+					FA45AC6B16AE350D0003A41D = {
+						DevelopmentTeam = PD5GSVG63T;
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = FA45AC6616AE350D0003A41D /* Build configuration list for PBXProject "PaymentKit Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = FA45AC6116AE350D0003A41D;
@@ -455,9 +481,12 @@
 				FA45ACA416AF1EE80003A41D /* PKCardNumber.m in Sources */,
 				FA45ACA716AF33750003A41D /* PKCardCVC.m in Sources */,
 				FA45ACAC16AF37420003A41D /* PKCardExpiry.m in Sources */,
+				BBD8085B239AF74800D15258 /* SwiftPaymentViewController.swift in Sources */,
+				BBD80859239AE59D00D15258 /* SPKCardType.swift in Sources */,
 				FA06D14C16AFC0AA00C46291 /* PKView.m in Sources */,
 				FA2A74A016BB1EDD00AF0078 /* PKCard.m in Sources */,
 				FAADE6CF16BC44D9006FF4D1 /* PKAddressZip.m in Sources */,
+				BBD80856239AE53400D15258 /* SPKCardNumber.swift in Sources */,
 				FA6F1A5E16C1B21000835C75 /* ViewController.m in Sources */,
 				FA3A8C5A16D208E300A9C346 /* PKUSAddressZip.m in Sources */,
 				4C332B4E16FA923E009C782D /* PKTextField.m in Sources */,
@@ -522,7 +551,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +573,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,11 +584,18 @@
 		FA45AC9416AE350E0003A41D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaymentKit Example/PaymentKit Example-Prefix.pch";
 				INFOPLIST_FILE = "PaymentKit Example/PaymentKit Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alokchoudhary.com.PaymentKit-Example";
 				PRODUCT_NAME = "PaymentKit Example";
+				SWIFT_OBJC_BRIDGING_HEADER = "../PaymentKit/SwiftPort/bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,11 +604,17 @@
 		FA45AC9516AE350E0003A41D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PaymentKit Example/PaymentKit Example-Prefix.pch";
 				INFOPLIST_FILE = "PaymentKit Example/PaymentKit Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alokchoudhary.com.PaymentKit-Example";
 				PRODUCT_NAME = "PaymentKit Example";
+				SWIFT_OBJC_BRIDGING_HEADER = "../PaymentKit/SwiftPort/bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
