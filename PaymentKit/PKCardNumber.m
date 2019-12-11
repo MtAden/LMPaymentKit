@@ -40,7 +40,7 @@
     
     NSString* firstChars = [number substringWithRange:NSMakeRange(0, 2)];
     
-    int range = [firstChars integerValue];
+    long int range = [firstChars integerValue];
     
     if (range >= 40 && range <= 49) {
         return PKCardTypeVisa;

@@ -124,7 +124,7 @@
     static NSCalendar *gregorian = nil;
 	
     if (!gregorian) {
-        gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     }
 
     return [gregorian dateFromComponents:comps];
