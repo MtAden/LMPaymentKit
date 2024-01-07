@@ -12,13 +12,10 @@ let package = Package(
             targets: ["LMPaymentKit"]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/MtAden/LMPaymentKit.git", .branch("SPM")),
-    ],
     targets: [
         .target(
             name: "LMPaymentKit",
-            dependencies: ["LMPaymentKit"],
+            dependencies: [],
             path: "PaymentKit"
         ),
     ]
