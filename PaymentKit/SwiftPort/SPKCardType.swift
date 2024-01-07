@@ -16,14 +16,4 @@ enum SPKCardType {
     case JCB
     case DinersClub
     case unknown
-//    typedef enum {
-//        PKCardTypeVisa,
-//        PKCardTypeMasterCard,
-//        PKCardTypeAmex,
-//        PKCardTypeDiscover,
-//        PKCardTypeJCB,
-//        PKCardTypeDinersClub,
-//        PKCardTypeUnknown
-//    } PKCardType;
-
 }

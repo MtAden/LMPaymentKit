@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+//#import <SenTestingKit/SenTestingKit.h>
 
-@interface PKTest : SenTestCase
-
-@end
+//@interface PKTest : XCTestCase
+//
+//@end

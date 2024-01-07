@@ -27,12 +27,19 @@ class SPKCardNumber {
         self.number = string.replacingOccurrences(of: "\\D", with: "")
     
     }
- /*   func spkCardType() -> SPKCardType {
-        if number.length < 2 {
-            return PKCardTypeUnknown
+   
+    func spkCardType() -> SPKCardType {
+        if number.count < 2 {
+            return SPKCardType.unknown
         }
-        var firstChars: String = number.substring(with: NSMakeRange(0, 2))
-        var range: Int32 = firstChars.intValue
+
+        let firstChars = String(number[..<number.index(number.startIndex, offsetBy: 2)])
+
+        guard let range = Int(firstChars)
+        else {
+            return SPKCardType.unknown
+        }
+        
         if range >= 40 && range <= 49 {
             return .Visa
         } else if range >= 50 && range <= 59 {
@@ -46,10 +53,10 @@ class SPKCardNumber {
         } else if range == 30 || range == 36 || range == 38 || range == 39 {
             return .DinersClub
         } else {
-            return unknown
+            return SPKCardType.unknown
         
         }
-    } */
+    }
     
     func last4(string: String) { }
     
