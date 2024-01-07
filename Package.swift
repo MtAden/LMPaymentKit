@@ -4,7 +4,9 @@ import PackageDescription
 let package = Package(
     name: "LMPaymentKit",
     platforms: [
-        .iOS(.v11),
+        .iOS(.v12),
+        .macOS(.v10_14),
+        .watchOS(.v5)
     ],
     products: [
         .library(
@@ -15,7 +17,6 @@ let package = Package(
     targets: [
         .target(
             name: "LMPaymentKit",
-            dependencies: [],
             path: "PaymentKit"
         ),
     ]
