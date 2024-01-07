@@ -16,8 +16,6 @@
 		16F373391875698F00290ABF /* diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F373381875698F00290ABF /* diners@2x.png */; };
 		16F3733B18756A5F00290ABF /* jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3733A18756A5F00290ABF /* jcb@2x.png */; };
 		4C332B4E16FA923E009C782D /* PKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C332B4D16FA923E009C782D /* PKTextField.m */; };
-		BBD80856239AE53400D15258 /* SPKCardNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD80855239AE53400D15258 /* SPKCardNumber.swift */; };
-		BBD80859239AE59D00D15258 /* SPKCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD80858239AE59D00D15258 /* SPKCardType.swift */; };
 		BBD8085B239AF74800D15258 /* SwiftPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8085A239AF74800D15258 /* SwiftPaymentViewController.swift */; };
 		FA007D1F16FA3B82006DD86E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6F1A5916C19BF700835C75 /* QuartzCore.framework */; };
 		FA06D14C16AFC0AA00C46291 /* PKView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06D14B16AFC0AA00C46291 /* PKView.m */; };
@@ -80,8 +78,6 @@
 		4C332B4C16FA923E009C782D /* PKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTextField.h; sourceTree = "<group>"; };
 		4C332B4D16FA923E009C782D /* PKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTextField.m; sourceTree = "<group>"; };
 		BBD80854239AE53300D15258 /* bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-Header.h"; sourceTree = "<group>"; };
-		BBD80855239AE53400D15258 /* SPKCardNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPKCardNumber.swift; sourceTree = "<group>"; };
-		BBD80858239AE59D00D15258 /* SPKCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPKCardType.swift; sourceTree = "<group>"; };
 		BBD8085A239AF74800D15258 /* SwiftPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPaymentViewController.swift; sourceTree = "<group>"; };
 		FA06D14A16AFC0AA00C46291 /* PKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PKView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		FA06D14B16AFC0AA00C46291 /* PKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PKView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -175,9 +171,7 @@
 		BBD80857239AE58300D15258 /* SwiftPort */ = {
 			isa = PBXGroup;
 			children = (
-				BBD80855239AE53400D15258 /* SPKCardNumber.swift */,
 				BBD80854239AE53300D15258 /* bridging-Header.h */,
-				BBD80858239AE59D00D15258 /* SPKCardType.swift */,
 			);
 			path = SwiftPort;
 			sourceTree = "<group>";
@@ -482,11 +476,9 @@
 				FA45ACA716AF33750003A41D /* PKCardCVC.m in Sources */,
 				FA45ACAC16AF37420003A41D /* PKCardExpiry.m in Sources */,
 				BBD8085B239AF74800D15258 /* SwiftPaymentViewController.swift in Sources */,
-				BBD80859239AE59D00D15258 /* SPKCardType.swift in Sources */,
 				FA06D14C16AFC0AA00C46291 /* PKView.m in Sources */,
 				FA2A74A016BB1EDD00AF0078 /* PKCard.m in Sources */,
 				FAADE6CF16BC44D9006FF4D1 /* PKAddressZip.m in Sources */,
-				BBD80856239AE53400D15258 /* SPKCardNumber.swift in Sources */,
 				FA6F1A5E16C1B21000835C75 /* ViewController.m in Sources */,
 				FA3A8C5A16D208E300A9C346 /* PKUSAddressZip.m in Sources */,
 				4C332B4E16FA923E009C782D /* PKTextField.m in Sources */,

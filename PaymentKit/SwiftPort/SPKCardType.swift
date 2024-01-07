@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum SPKCardType {
-    case Visa
-    case Master
-    case Amex
-    case Discover
-    case JCB
-    case DinersClub
-    case unknown
-}
+//enum SPKCardType {
+//    case Visa
+//    case Master
+//    case Amex
+//    case Discover
+//    case JCB
+//    case DinersClub
+//    case unknown
+//}
